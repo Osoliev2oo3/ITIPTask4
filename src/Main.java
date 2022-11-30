@@ -3,9 +3,9 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        String[] a = isesse(10, 7, "hello my name is Bessie and this is my essay");
+        String[] a = isesse(10, 7, "hello my name is Bessie and this is my essay .");
         for (int i = 0; i < 10; i++) {
-            if (a[i] != "")
+            if (a[i].equals("")!=true)
                 System.out.println(a[i]);
         }
         System.out.println(split("(())()()(())"));
@@ -17,7 +17,7 @@ public class Main {
         System.out.println("\nЭлементы в векторе:");
         while (vEnum.hasMoreElements())
             System.out.print(vEnum.nextElement() + " ");
-        System.out.println();
+        System.out.println(trouble(666789, 12345667));
         System.out.println(doesRhyme("Sam I am!", "Green eggs and ham."));
         System.out.println(countUniqueBooks("AZYWABBCATTTA", 'A'));
 
